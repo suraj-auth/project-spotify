@@ -44,13 +44,13 @@
   .folder {
     gap: 0px;
   }
-  .artist {
-    height: 100px;
-    width: 95px;
+ .artist {
+    height: 130px;
+    width: 110px;
   }
   .image {
-    height: 70%;
-    width: 70%;
+    height: 75%;
+    width: 85%;
   }
   .artist .p1 {
     font-size: 13px;
