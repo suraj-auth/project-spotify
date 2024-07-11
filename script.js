@@ -120,9 +120,10 @@ player.addEventListener("click", (e) => {
 });
 // fetching the songs of the folder on which user has clicked
 async function fetchsong(name) {
-  let data = await fetch(
+  let data = await fetch(`/audios/${name}`)
+  /* let data = await fetch();
     `http://127.0.0.1:5500/Projects/Project%20Spotify/audios/${name}`
-  );
+  );*/
   let response = await data.text();
   let div = document.createElement("div");
   div.innerHTML = response;
