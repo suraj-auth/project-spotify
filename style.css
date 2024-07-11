@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.left {
+  height: 95%;
+  width: 24%;
+  margin: 10px 10px 0px 10px;
+}
+.l-upper {
+  height: 28%;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+}
+.ham {
+  width: 90%;
+  justify-content: space-between;
+}
+.ham img {
+  height: 30px;
+}
+.ham #cross-i {
+  display: none;
+}
+.part {
+  column-gap: 20px;
+}
+.part img {
+  height: 25px;
+  cursor: pointer;
+}
+.part p {
+  color: white;
+  font-weight: 700;
+}
+.part p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.l-lower {
+  height: 72%;
+  width: 100%;
+}
+.library-up {
+  justify-content: space-between;
+  width: 90%;
+  height: 10%;
+  margin: auto;
+  padding-top: 20px;
+}
+.library-down {
+  margin-top: 5px;
+  height: 85%;
+  overflow: auto;
+}
+/* .library-down::-webkit-scrollbar {
+  display: none;
+} */
+.music-box {
+  border-radius: 10px;
+  cursor: pointer;
+  min-height: 50px;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+.music-box img {
+  height: 30px;
+}
+.music-box p {
+  color: white;
+}
+.pack {
+  column-gap: 10px;
+  cursor: pointer;
+}
+.pack p {
+  color: rgb(173, 169, 169);
+  font-weight: 700;
+}
+.pack img {
+  height: 30px;
+}
+.plus {
+  height: 25px;
+  cursor: pointer;
+}
+.plus:hover {
+  color: white;
+}
+.right {
+  height: 97%;
+  width: 75%;
+  margin: 10px 10px 10px 0px;
+}
+.r-upper {
+  height: 15%;
+  width: 100%;
+  justify-content: space-between;
+}
+.r-left {
+  gap: 10px;
+  margin-left: 20px;
+}
+.r-left > img {
+  display: none;
+  height: 23px;
+}
+.box {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: black;
+  justify-content: center;
+  cursor: pointer;
+}
+.box img {
+  height: 20px;
+  color: grey;
+}
+.r-right {
+  margin-right: 20px;
+  padding: 10px;
+}
+.btn {
+  cursor: pointer;
+  height: 45px;
+  width: 100px;
+  font-size: 15px;
+  border-radius: 60px;
+  margin-right: 10px;
+  border: none;
+  font-weight: 700;
+}
+.btn:hover {
+  height: 47px;
+  width: 105spx;
+}
+.btn2 {
+  color: grey;
+  background-color: rgb(16, 16, 16);
+}
+.r-lower {
+  height: 72%;
+  background-color: rgb(27, 27, 27);
+  width: 100%;
+  padding: 20px;
+  overflow: auto;
+}
+.artist-list {
+  justify-content: space-between;
+  padding: 5px;
+  /* border: 1px solid white; */
+}
+.artist-list h2 {
+  color: white;
+}
+.artist-list p {
+  color: rgb(163, 158, 158);
+  font-weight: 700;
+}
+.artist-list p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.folder {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+}
+.artist {
+  height: 220px;
+  width: 170px;
+  cursor: pointer;
+}
+.image {
+  height: 80%;
+  width: 100%;
+  border-radius: 50%;
+}
+.image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.artist .p1 {
+  color: white;
+  font-weight: 600;
+}
+.artist .p2 {
+  color: gray;
+  font-size: 14px;
+  font-weight: 600;
+}
+.r-foot {
+  height: 15%;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding-bottom: 2px;
+}
+.r-box {
+  height: 50%;
+  width: 100%;
+  justify-content: space-around;
+}
+.para1 {
+  color: white;
+  font-weight: 600;
+}
+.para2 {
+  height: 30px;
+  justify-content: center;
+  width: 100px;
+  color: white;
+  font-weight: 600;
+}
+.play-buttons {
+  justify-content: space-evenly;
+  width: 20%;
+  margin-top: 10px;
+}
+.play-buttons img {
+  height: 25px;
+  cursor: pointer;
+}
+#input {
+  -webkit-appearance: none;
+  width: 90%;
+  border: none;
+  height: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(80, 81, 80);
+}
+#input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+}
+.player-box {
+  background-color: white;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#player {
+  height: 20px;
+}

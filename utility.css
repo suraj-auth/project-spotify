@@ -1,0 +1,30 @@
+.bdr1 {
+  border: 1px solid white;
+}
+.radi {
+  border-radius: 10px;
+}
+.bg {
+  background-color: rgb(22, 22, 22);
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+::-webkit-scrollbar {
+  width: 13px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #2c2c2c; /* Background of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5c5c5c; /* Color of the thumb */
+  border-radius: 6px; /* Rounded corners of the thumb */
+  border: 3px solid #2c2c2c; /* Padding around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b0b0b0; /* Color of the thumb on hover */
+}

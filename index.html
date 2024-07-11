@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <main>
+      <div class="left radi">
+        <div class="l-upper bdr radi bg">
+          <div class="ham flex">
+            <img src="icons/spotify.svg" alt="" />
+            <img id="cross-i" src="icons/cancel.svg" alt="" />
+          </div>
+          <div class="part flex">
+            <img src="icons/home.svg" alt="" />
+            <p>Home</p>
+          </div>
+          <div class="part flex">
+            <img src="icons/search.svg" alt="" />
+            <p style="color: grey">Search</p>
+          </div>
+        </div>
+        <div class="l-lower bdr radi bg">
+          <div class="library-up flex">
+            <div class="pack flex">
+              <img src="icons/library.svg" alt="" />
+              <p>Your Library</p>
+            </div>
+            <img class="plus" src="icons/plus.svg" alt="" />
+          </div>
+          <div class="library-down">
+            <ul id="list">
+              <li>
+                <!-- <div id="event-box" class="music-box bdr1 flex">
+                  <img src="icons/music.svg" alt="" />
+                  <div class="music-name">
+                    <p class="p1">Dont Look</p>
+                    <p class="p2">Karan Aujla</p>
+                  </div>
+                  <img src="icons/play.svg" alt="" />
+                </div> -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right bdr radi bg">
+        <div class="r-upper radi flex">
+          <div class="r-left flex">
+            <img id="ham-i" src="icons/ham.svg" alt="" />
+            <div class="box flex">
+              <img src="icons/left-arrow.svg" alt="" />
+            </div>
+            <div class="box flex">
+              <img src="icons/right-arrow.svg" alt="aro" />
+            </div>
+          </div>
+          <div class="r-right">
+            <button class="btn btn2">Sing up</button
+            ><button class="btn">Log in</button>
+          </div>
+        </div>
+        <div class="r-lower radi">
+          <div class="artist-list flex">
+            <h2>Popular artists</h2>
+            <p id="show">Show all</p>
+          </div>
+          <div class="folder">
+            <div class="artist">
+              <div class="image">
+                <img id="imga" src="Images/Karan Aujla.jpg" alt="" />
+              </div>
+              <p class="p1">Karan Aujla</p>
+              <p class="p2">Artist</p>
+            </div>
+            <div class="artist">
+              <div class="image">
+                <img src="Images/Arijit Singh.jpg" alt="" />
+              </div>
+              <p class="p1">Arijit Singh</p>
+              <p class="p2">Artist</p>
+            </div>
+            <div class="artist">
+              <div class="image">
+                <img src="Images/Arjun Kanongo.jpg" alt="" />
+              </div>
+              <p class="p1">Arjun Kanungo</p>
+              <p class="p2">Artist</p>
+            </div>
+            <div class="artist">
+              <div class="image">
+                <img src="Images/Atif Aslam.jpg" alt="" />
+              </div>
+              <p class="p1">Atif Aslam</p>
+              <p class="p2">Artist</p>
+            </div>
+            <div class="artist">
+              <div class="image">
+                <img src="Images/Darshan Raval.jpg" alt="" />
+              </div>
+              <p class="p1">Darshan Raval</p>
+              <p class="p2">Artist</p>
+            </div>
+            <div style="display: none" class="artist">
+              <div class="image">
+                <img src="Images/Diljit Dosanjh.jpg" alt="" />
+              </div>
+              <p class="p1">Diljit Dosanjh</p>
+              <p class="p2">Artist</p>
+            </div>
+            <div style="display: none" class="artist">
+              <div class="image">
+                <img src="Images/Ed Sheren.jpg" alt="" />
+              </div>
+              <p class="p1">Ed Sheeran</p>
+              <p class="p2">Artist</p>
+            </div>
+            <div style="display: none" class="artist">
+              <div class="image">
+                <img src="Images/One Direction.jpg" alt="" />
+              </div>
+              <p class="p1">One Direction</p>
+              <p class="p2">Artist</p>
+            </div>
+            <div style="display: none" class="artist">
+              <div class="image">
+                <img src="Images/Passenger.jpg" alt="" />
+              </div>
+              <p class="p1">Passenger</p>
+              <p class="p2">Artist</p>
+            </div>
+            <div style="display: none" class="artist">
+              <div class="image">
+                <img src="Images/The Weekend.jpg" alt="" />
+              </div>
+              <p class="p1">The Weekend</p>
+              <p class="p2">Artist</p>
+            </div>
+          </div>
+        </div>
+        <div class="r-foot radi flex">
+          <audio id="song" src=""></audio>
+          <div class="r-box flex">
+            <p class="para1">Name</p>
+            <div class="play-buttons flex">
+              <img id="prev" src="icons/previous.svg" alt="" />
+              <div class="player-box flex">
+                <img class="pause" id="player" src="icons/player.svg" alt="" />
+              </div>
+              <img id="next" src="icons/next.svg" alt="" />
+            </div>
+            <p class="para2 flex">00:00/00:00</p>
+          </div>
+          <input id="input" type="range" />
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
