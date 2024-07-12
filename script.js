@@ -29,9 +29,9 @@ show.addEventListener("click", (e) => {
 // adding event listener on the folders for calling the fetch function
 document.querySelectorAll(".artist").forEach((e) => {
   e.addEventListener("click", (e) => {
-    let song = document.querySelector("#song");
-song.src="/audios/Karan_Aujla/Adhiya-Karan_Aujla.mp3";
-song.play();
+//     let song = document.querySelector("#song");
+// song.src="/audios/Karan_Aujla/Adhiya-Karan_Aujla.mp3";
+// song.play();
     let a = e.currentTarget.getElementsByTagName("p");
     let name = a[0].innerHTML;
     fetchsong(name);
@@ -124,11 +124,15 @@ player.addEventListener("click", (e) => {
 });
 // fetching the songs of the folder on which user has clicked
 async function fetchsong(name) {
-  let data = await fetch("/audios/Karan_Aujla/Adhiya-Karan_Aujla.mp3");
+  let data = await fetch("/audios/Karan_Aujla");
   /* let data = await fetch();
     `http://127.0.0.1:5500/Projects/Project%20Spotify/audios/${name}`
   );*/
+  console.log("type of data = " +  typeof data);
+  console.log("value of data = " + data);
   let response = await data.text();
+  console.log("type of response = " + typeof response);
+  console.log("value of response = " + response);
   let div = document.createElement("div");
   div.innerHTML = response;
   console.log(data);
