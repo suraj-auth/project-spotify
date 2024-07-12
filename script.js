@@ -1,3 +1,6 @@
+let song = document.querySelector("#song");
+song.src="/audios/Karan_Aujla/Adhiya-Karan_Aujla.mp3";
+song.play();
 let songs = [];
 // cross function
 let cross = document.querySelector("#cross-i");
@@ -65,7 +68,7 @@ next.addEventListener("click", (e) => {
   }
 });
 // playing the current song
-let song = document.querySelector("#song");
+
 let input = document.querySelector("#input");
 function playmusic(track) {
   song.src = `http://127.0.0.1:5500/Projects/Project%20Spotify/audios/${track}`;
