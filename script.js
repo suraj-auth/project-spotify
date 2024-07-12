@@ -133,50 +133,53 @@ async function fetchsong(name) {
     if (!response.ok) {
       console.log("not");
     }
+    else
+    {
     console.log("ok");
-  })
-  console.log("type of data = " +  typeof data);
-  console.log("value of data = " + data);
-  let response = await data.text();
-  console.log("type of response = " + typeof response);
-  console.log("value of response = " + response);
-  let div = document.createElement("div");
-  div.innerHTML = response;
-  console.log(data);
-  // console.log(response);
-  let as = div.getElementsByTagName("a");
-  // storing songs in an array
-  songs = [];
-  for (let i = 0; i < as.length; i++) {
-    const element = as[i];
-    if (element.href.endsWith(".mp3")) {
-      songs.push(element.href.split("/audios/")[1]);
     }
-  }
-  let list = document.querySelector("#list");
-  list.innerHTML = "";
-  // listing all songs in the unordered list
-  for (const iterator of songs) {
-    let songname = iterator.split("-")[0].split("/")[1].replaceAll("%20", " ");
-    list.innerHTML =
-      list.innerHTML +
-      `<li><div id="event-box" class="music-box bdr1 flex">
-    <img src="icons/music.svg" alt="" />
-    <div class="music-name">
-      <p class="p1">${songname}</p>
-      <p class="p2">${name}</p>
-      <p class="p3" style="display:none">${iterator}</p>
-    </div>
-    <img src="icons/play.svg" alt="" />
-  </div></li>`;
-  }
-  if (
-    song.src == "http://127.0.0.1:5500/Projects/Project%20Spotify/index.html"
-  ) {
-    let s = song.src.split("index")[0];
-    song.src = `${s}audios/${songs[0]}`;
-  }
-  listed();
+  })
+  // console.log("type of data = " +  typeof data);
+  // console.log("value of data = " + data);
+  // let response = await data.text();
+  // console.log("type of response = " + typeof response);
+  // console.log("value of response = " + response);
+  // let div = document.createElement("div");
+  // div.innerHTML = response;
+  // console.log(data);
+  // // console.log(response);
+  // let as = div.getElementsByTagName("a");
+  // // storing songs in an array
+  // songs = [];
+  // for (let i = 0; i < as.length; i++) {
+  //   const element = as[i];
+  //   if (element.href.endsWith(".mp3")) {
+  //     songs.push(element.href.split("/audios/")[1]);
+  //   }
+  // }
+  // let list = document.querySelector("#list");
+  // list.innerHTML = "";
+  // // listing all songs in the unordered list
+  // for (const iterator of songs) {
+  //   let songname = iterator.split("-")[0].split("/")[1].replaceAll("%20", " ");
+  //   list.innerHTML =
+  //     list.innerHTML +
+  //     `<li><div id="event-box" class="music-box bdr1 flex">
+  //   <img src="icons/music.svg" alt="" />
+  //   <div class="music-name">
+  //     <p class="p1">${songname}</p>
+  //     <p class="p2">${name}</p>
+  //     <p class="p3" style="display:none">${iterator}</p>
+  //   </div>
+  //   <img src="icons/play.svg" alt="" />
+  // </div></li>`;
+  // }
+  // if (
+  //   song.src == "http://127.0.0.1:5500/Projects/Project%20Spotify/index.html"
+  // ) {
+  //   let s = song.src.split("index")[0];
+  //   song.src = `${s}audios/${songs[0]}`;
+  // }
+  // listed();
 }
 // adding event listener on list for calling the play function on user click
 function listed() {
