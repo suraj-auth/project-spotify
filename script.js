@@ -128,7 +128,7 @@ async function fetchsong(name) {
   /* let data = await fetch();
     `http://127.0.0.1:5500/Projects/Project%20Spotify/audios/${name}`
   );*/
-  fetch('https://github.com/suraj-auth/project-spotify/tree/main/audios')
+  fetch('https://github.com/suraj-auth/project-spotify/audios')
   .then(response => {
     if (!response.ok) {
       console.log("not");
