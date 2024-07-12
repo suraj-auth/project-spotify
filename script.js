@@ -128,7 +128,7 @@ async function fetchsong(name) {
   let div = document.createElement("div");
   div.innerHTML = response;
   console.log(data);
-  console.log(response);
+  // console.log(response);
   let as = div.getElementsByTagName("a");
   // storing songs in an array
   songs = [];
