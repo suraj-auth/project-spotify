@@ -124,7 +124,7 @@ player.addEventListener("click", (e) => {
 });
 // fetching the songs of the folder on which user has clicked
 async function fetchsong(name) {
-  let data = await fetch("/audios/Karan_Aujla");
+  let data = await fetch("https://github.com/suraj-auth/project-spotify/tree/main/audios/Karan_Aujla");
   /* let data = await fetch();
     `http://127.0.0.1:5500/Projects/Project%20Spotify/audios/${name}`
   );*/
