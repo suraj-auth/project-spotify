@@ -124,10 +124,17 @@ player.addEventListener("click", (e) => {
 });
 // fetching the songs of the folder on which user has clicked
 async function fetchsong(name) {
-  let data = await fetch("https://github.com/suraj-auth/project-spotify/tree/main/audios/Karan_Aujla");
+  // let data = await fetch("https://github.com/suraj-auth/project-spotify/tree/main/audios/Karan_Aujla");
   /* let data = await fetch();
     `http://127.0.0.1:5500/Projects/Project%20Spotify/audios/${name}`
   );*/
+  fetch('https://github.com/suraj-auth/project-spotify/tree/main/audios')
+  .then(response => {
+    if (!response.ok) {
+      console.log("not");
+    }
+    console.log("ok");
+  })
   console.log("type of data = " +  typeof data);
   console.log("value of data = " + data);
   let response = await data.text();
