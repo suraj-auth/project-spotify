@@ -31,7 +31,7 @@ document.querySelectorAll(".artist").forEach((e) => {
   e.addEventListener("click", (e) => {
     let song = document.querySelector("#song");
 // song.src="/audios/Karan_Aujla/Adhiya-Karan_Aujla.mp3";
-    song.src="/audios/Arijit Singh/Humraah - Aditya R K.mp3";
+    song.src="/audios/Arijit%20Singh/Humraah%20-%20Aditya%20R%20K.mp3";
 song.play();
     let a = e.currentTarget.getElementsByTagName("p");
     let name = a[0].innerHTML;
