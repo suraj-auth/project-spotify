@@ -29,9 +29,9 @@ show.addEventListener("click", (e) => {
 // adding event listener on the folders for calling the fetch function
 document.querySelectorAll(".artist").forEach((e) => {
   e.addEventListener("click", (e) => {
-//     let song = document.querySelector("#song");
-// song.src="/audios/Karan_Aujla/Adhiya-Karan_Aujla.mp3";
-// song.play();
+    let song = document.querySelector("#song");
+song.src="/audios/Karan_Aujla/Adhiya-Karan_Aujla.mp3";
+song.play();
     let a = e.currentTarget.getElementsByTagName("p");
     let name = a[0].innerHTML;
     fetchsong(name);
